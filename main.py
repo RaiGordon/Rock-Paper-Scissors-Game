@@ -269,7 +269,6 @@ def who_wins():
     elif SCORES["player"] == SCORES["computer"]:
         label4.config(text="You tie. " + str(SCORES["computer"]) + " / " + str(SCORES["player"]))
 
-
 ####What happens if useer presses a rock, paper, scissors button####
 
 # **TIE GAME**
@@ -425,7 +424,6 @@ quit_btn.grid(column=8, row=13,ipadx=10, ipady=20 )
 instr_play_game_button = ttk.Button(instructions_frame, text="Play Game", width=15, command=lambda: raise_frame(game_frame))
 instr_play_game_button.grid(column=4, columnspan=4, row=13,ipadx=10, ipady=20)
 
-
 ####Labels####
 
 # Title label
@@ -445,8 +443,6 @@ instructions = "Two players will each randomly choose one of three hand signs: \
                "► SCISSORS wins over paper (because scissors cut paper)\n\n" \
                "If both players show the same sign, it’s a tie. \n\n" \
                "Good Luck!"
-
-
 
 # Main instructions
 inst_main = Label(instructions_frame, text=instructions, anchor="e", justify=LEFT)
